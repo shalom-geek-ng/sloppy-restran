@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sloppy</title>
+    <link rel="stylesheet" href="Static/Css/style.css">
+    <link rel="stylesheet" href="Static/Css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Static/Css/chat.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+ 
+      <!--Nav start  -->
+   <nav class="navbar fixed-top navbar-expand-lg navbar " >
+    
+    <div class="container">
+      <a class="navbar-brand carousel-heading nav-heading" style="color: white;"  href="#"><img src="Static/Img/chef-hat-1-1.png" width="68" height="55" alt=""> Sloppy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" style="color: white;" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" style="color: white;"  aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="color: white;"  href="#About-Us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="color: white;"  aria-current="page" href="#Menu">Menu
+
+            </a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link active" style="color: white;"  aria-current="page" href="#Gallery">Gallery
+
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="color: white;"  aria-current="page" href="#chef">Our Chefs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="color: white;"  aria-current="page" href="#bookTable">Reservation</a>
+          </li>
+          
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+  <!-- Nav end -->
+
+  <!-- Caraousel start -->
+ <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="position: relative;">
+      
+        <img src="Static/Img/sharwama.jpg" style="height: 100vh; object-fit: cover; object-position: center;" class="d-block w-100" alt="...">
+      <div class="div-position" style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%);"><h3 class="carousel-heading" style="color: white;text-align: center;">Delicious Food</h3> 
+      <p class="fs-6 carousel-paragragh" style="text-align: center; color: white;">Indulge in a culinary journey like no other at our restaurant, where each dish is crafted with the freshest ingredients and bursting with bold flavors that will leave your taste buds wanting more. From savory starters to decadent desserts, our menu offers a delectable selection of dishes that are sure to satisfy every craving.</p>
+  
+      <a href="#bookTable" style="color: white;">  <div class="btn-book"  style="margin: auto; width: fit-content; height: fit-content; padding: 10px; border-radius: 15px; border: 2px solid goldenrod; color: white; background-color: goldenrod;"> Book a Table</a></div>
+  
+      
+      </div>
+      </div>
+      <div class="carousel-item" style="position: relative;">
+      
+        <img src="Static/Img/chicken.jpg" style="height: 100vh; object-fit: cover; object-position: center;" class="d-block w-100" alt="...">
+      <div class="div-position" style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%);"><h3 class="carousel-heading" style="color: white;text-align: center;">Family Food Recipee</h3> 
+      <p class="fs-6 carousel-paragragh" style="text-align: center; color: white;">Discover the heartwarming flavors of our family food recipes, passed down from generation to generation and served with love at our restaurant. With each bite, savor the nostalgia and tradition of home-cooked meals that bring families together.</p>
+  
+      <div class="btn-book" style="margin: auto; width: fit-content; height: fit-content; padding: 10px; border-radius: 15px; border: 2px solid goldenrod; color: white; background-color: goldenrod;">Book a Table</div>
+  
+      
+      </div>
+      </div>
+      <div class="carousel-item" style="position: relative;">
+      
+        <img src="Static/Img/burger.jpg" style="height: 100vh; object-fit: cover; object-position: center;" class="d-block w-100" alt="...">
+      <div class="div-position" style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%);"><h3 class="carousel-heading" style="color: white;text-align: center;">The Best Set of Food In town</h3> 
+      <p class="fs-6 carousel-paragragh" style="text-align: center; color: white;">Experience the ultimate culinary delight with our award-winning set of dishes that have been carefully crafted by our expert chefs. From mouth-watering appetizers to sumptuous entrees and delightful desserts, our menu boasts the best set of food in town that is sure to leave you completely satisfied.</p>
+  
+      <div class="btn-book" style="margin: auto; width: fit-content; height: fit-content; padding: 10px; border-radius: 15px; border: 2px solid goldenrod; color: white; background-color: goldenrod;">Book a Table</div>
+  
+      
+      </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+   <!-- Carousel end -->
+
+
+   
+
+   <!-- Introduction-start -->
+<div id="About-Us">
+    <div class="container" style="margin-top: 100px;">
+      <div class="row">
+        <!-- box start -->
+        
+        <div class="box col-lg-6">
+          <div class="boxed" style="width: 100%; height: fit-content;">
+          <h3 class="introduction-heading about-paragraph" style="color: goldenrod;">ABOUT US</h3>
+          <span class="auto-type1 fs-4 welcome-para" style="margin-top: 30px;"></span>
+          <p>Welcome to Sloppy Restaurant! We are thrilled to have you visit our website and invite you to explore our menu featuring a variety of delicious dishes that are sure to delight your taste buds. Whether you're dining in, taking out, or ordering delivery, we look forward to providing you with an exceptional culinary experience that reflects our commitment to quality and customer satisfaction.</p>
+          <div class="book-btn more-btn counter-btn" style=" width: fit-content; height: fit-content; padding: 10px; border-radius: 15px; border: 2px solid goldenrod; color: goldenrod;"data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</div>
+          
+          <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: goldenrod; width: fit-content; margin: auto; height: fit-content; text-align: center;">ABOUT US</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="static/Img/resturant.jpg" width="100%" height="200px" style="object-fit: cover; object-position: center;" alt="">
+            <figcaption style="text-align: center; color: gray;">A view of our resturant</figcaption>
+           <p class="mt-3"> At our restaurant, we pride ourselves on offering a unique and enjoyable dining experience. We offer a variety of delicious dishes that cater to all tastes and dietary needs.
+    
+    To start off your meal, we have a range of appetizers that are perfect for sharing with friends and family. Our popular appetizers include our crispy calamari, juicy chicken wings, and creamy spinach and artichoke dip. </p>
+    
+    
+    
+    
+    <div class="row gx-1 mt-3">
+      <div class="box col-lg-4 col-md-6 col-sm-12">
+        <div class="boxed " style="height: fit-content; text-align: center; border: 2px solid goldenrod;">
+          <span style="font-size: 30px; " class="num" data-val="5000" aria-colcount=""><b> 0000 </span>
+            <p >Happy Customers</b></p>
+            <p class="fs-2">+</p>
+        </div>
+      </div>
+      <div class="box col-lg-4 col-md-6 col-sm-12">
+        <div class="boxed " style="height: fit-content; text-align: center; border: 2px solid goldenrod;">
+          <span style="font-size: 30px; " class="num" data-val="3000" aria-colcount=""><b> 0000 </span>
+            <p >Meals Delivered</b></p>
+            <p class="fs-2">+</p>
+        </div>
+      </div>
+      <div class="box col-lg-4 col-md-6 col-sm-12">
+        <div class="boxed " style="height: fit-content; text-align: center; border: 2px solid goldenrod;">
+          <span style="font-size: 30px; " class="num" data-val="800" aria-colcount=""><b> 0000 </span>
+            <p >Five Star</b></p>
+            <p class="fs-2">+</p>
+        </div>
+      </div>
+    </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+          </div>
+        </div>
+         <!-- box end -->
+          <!-- box-image start -->
+
+          
+          <div class="box col-lg-6">
+      <div class="boxed " style="width: 100%; height: fit-content;">
+      <img data-aos="fade-up"  data-aos-delay="300" data-aos-duration="1000" src="Static/Img/about-removebg-preview.png" style="height: 300px; width: 100%; object-fit: cover; object-position: center;" alt="">
+      </div>
+    </div>
+     <!-- box-image end -->
+  </div>
+</div>
+<!--  -->
+<!--  -->
+</div>
+
+
+
+<div class="foodStuff" style="width: 100%; height: fit-content ;padding: 20px 0px; margin-top: 50px;">
+<div class="container">
+    <div class="row gx-1 gy-1">
+        <div class="box col-lg-4 col-md-6 col-sm-12">
+            <div class="boxed" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="500"style="background-color: white; padding: 10px 0px; height: fit-content;">
+            <img src="Static/Img/barbeque.png" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+             <h6 style="text-align: center; color: black;">Barbeque Roast Grilling</h6>
+    <p style="text-align: center; color: black;">$50</p>
+    <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;">Order Now</div>
+            </div>
+        </div>
+        <div class="box col-lg-4 col-md-6 col-sm-12">
+            <div class="boxed" data-aos="fade-up"  data-aos-delay="300" data-aos-duration="500" style="background-color: white; padding: 10px 0px; height: fit-content;">
+            <img src="Static/Img/barbeque2.png" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+             <h6 style="text-align: center; color: black;">Chicken Tika</h6>
+    <p style="text-align: center; color: black;">$100</p>
+    <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;">Order Now</div>
+            </div>
+        </div>
+        <div class="box col-lg-4 col-md-6 col-sm-12">
+            <div class="boxed" data-aos="fade-down"  data-aos-delay="300" data-aos-duration="500" style="background-color: white; padding: 10px 0px; height: fit-content;">
+            <img src="Static/Img/barbeque3.png" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+             <h6 style="text-align: center; color: black;">Barbeque Pincho Kehab</h6>
+    <p style="text-align: center; color: black;">$100</p>
+    <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;">Order Now</div>
+            </div>
+        </div>
+    </div>
+    <!-- View Btn -->
+    <div class="book-btn counter-btn" style="margin: 50px auto; width: fit-content; height: fit-content; padding: 10px; border-radius: 15px; border: 2px solid goldenrod; color: goldenrod;"data-bs-toggle="modal" data-bs-target="#exampleModal2"><b> View All</b></div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel2" style="color: goldenrod; width: fit-content; margin: auto; height: fit-content; text-align: center;">Today's Dishes😋🍖</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      
+      <p style="text-align: center;">Dishes Available Today</p>
+    
+    
+    
+      <div class="container">
+        <div class="row gx-1">
+          <!--  -->
+          <div class="box col-12 ">
+            <div class="boxed " data-aos="fade-up"  data-aos-delay="300" data-aos-duration="500" style="background-color: white; height: fit-content; padding: 10px;">
+            <img src="Static/Img/barbeque.png" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            <h6 style="text-align: center; color: black;">Barbeque Roast Grilling</h6>
+            <p style="text-align: center; color: black;">$50</p>
+            <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Order Now</div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="box col-12">
+            <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+            <img src="Static/Img/jollof.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            <h6 style="text-align: center; color: black;">Nigeria Jollof</h6>
+            <p style="text-align: center; color: black;">$20</p>
+            <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Order Now</div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="box col-12">
+            <div class="boxed " data-aos="fade-right"  data-aos-delay="300" data-aos-duration="800" style="background-color: white; height: fit-content; padding: 10px;">
+            <img src="Static/Img/barbeque2.png" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            <h6 style="text-align: center; color: black;">Chicken Tika</h6>
+            <p style="text-align: center; color: black;">$100</p>
+            <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Order Now</div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="box col-12">
+            <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+            <img src="Static/Img/barbeque4.png" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            <h6 style="text-align: center; color: black;">Dim Sum Side Dish</h6>
+            <p style="text-align: center; color: black;">$50</p>
+            <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Order Now</div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="box col-12">
+            <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+            <img src="Static/Img/barbeque5.png" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            <h6 style="text-align: center; color: black;">Hamburger Burger</h6>
+            <p style="text-align: center; color: black;">$150</p>
+            <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Order Now</div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="box col-12">
+            <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+            <img src="Static/Img/barbeque6.png" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            <h6 style="text-align: center; color: black;">Spicy Chicken</h6>
+            <p style="text-align: center; color: black;">$20</p>
+            <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Order Now</div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="box col-12">
+            <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+            <img src="Static/Img/barbeque7.png" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            <h6 style="text-align: center; color: black;">Barbeque Pincho Kehab</h6>
+            <p style="text-align: center; color: black;">$100</p>
+            <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Order Now</div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="box col-12">
+            <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+            <img src="Static/Img/barbeque8.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            <h6 style="text-align: center; color: black;">Tapa and Egg Fried Rice</h6>
+            <p style="text-align: center; color: black;">$20</p>
+            <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Order Now</div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="box col-12">
+            <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+            <img src="Static/Img/barbeque9.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            <h6 style="text-align: center; color: black;">Moi Moi</h6>
+            <p style="text-align: center; color: black;">$10</p>
+            <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Order Now</div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="box col-12">
+            <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+            <img src="Static/Img/barbeque12.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            <h6 style="text-align: center; color: black;">Pizza</h6>
+            <p style="text-align: center; color: black;">$200</p>
+            <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Order Now</div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="box col-12">
+            <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+            <img src="Static/Img/barbeque10.jpeg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            <h6 style="text-align: center; color: black;">Fried Rice</h6>
+            <p style="text-align: center; color: black;">$50</p>
+            <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Order Now</div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="box col-12">
+            <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+            <img src="Static/Img/barbeque11.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            <h6 style="text-align: center; color: black;">Ofada Rice and Stew</h6>
+            <p style="text-align: center; color: black;">$50</p>
+            <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Order Now</div>
+            </div>
+          </div>
+          <!--  -->
+          <!--  -->
+          <div class="box col-12">
+            <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+            <img src="Static/Img/barbeque13.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            <h6 style="text-align: center; color: black;">Spaghetti and Meet balls</h6>
+            <p style="text-align: center; color: black;">$50</p>
+            <div class="order-btn" style="width: fit-content; height: fit-content; padding: 10px ;border-radius: 15px; background-color: goldenrod; color: white; margin: auto;"><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Order Now</div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        
+    
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- modal end -->
+    
+
+</div>
+</div>
+
+
+
+
+<!-- Atmosphere start -->
+<div class="container" style="margin-top: 80px;">
+    <div class="row gx-1">
+      <div class="box col-lg-4">
+        <div class="boxed "  data-aos-duration="1000" style="height: fit-content; display: flex; justify-content: space-between; margin: 0px;">
+        <!-- <i class="fa fa-home fs-1 " style="color: goldenrod;"  aria-hidden="true"></i> -->
+        <div class="" style="width: 20%;"> <i class="fa fa-home fs-1 " style="color: goldenrod;"  aria-hidden="true"></i></div>
+        <div class="" style="width: 80%;"><h4>Atmosphere</h4>
+        <p>Our restaurant's inviting atmosphere creates the perfect ambiance for a memorable dining experience.</p>
+        </div>
+        
+        </div>
+      </div>
+      <div class="box col-lg-4">
+        <div class="boxed " data-aos="fade-down" data-aos-duration="1000" style="height: fit-content; display: flex; justify-content: space-between; margin: 0px;">
+          <!-- <i class="fa fa-home fs-1 " style="color: goldenrod;"  aria-hidden="true"></i> -->
+          <div class="" style="width: 20%;"> <i class="fa fa-coffee fs-1 " style="color: goldenrod;"  aria-hidden="true"></i></div>
+          <div class="" style="width: 80%;"><h4>High Food Quality</h4>
+          <p>Our restaurant is committed to providing the highest quality food, using only the freshest ingredients and expertly crafted recipes</p>
+          </div>
+          
+          </div>
+        </div>
+      <div class="box col-lg-4">
+        <div class="boxed " data-aos="fade-up" data-aos-duration="1000" style="height: fit-content; display: flex; justify-content: space-between; margin: 0px;">
+          <!-- <i class="fa fa-home fs-1 " style="color: goldenrod;"  aria-hidden="true"></i> -->
+          <div class="" style="width: 20%;"> <i class="fa fa fa-money fs-1 " style="color: goldenrod;"  aria-hidden="true"></i></div>
+          <div class="" style="width: 80%;"><h4>Healthy on a budget</h4>
+          <p>Our restaurant offers healthy and delicious meals that are easy on the wallet, making it easier than ever to maintain a nutritious diet</p>
+          </div>
+          
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+    <hr style="width: 100%; color: goldenrod;">
+  </div>
+  
+
+  <!-- Menu start-->
+<div class="container-fluid" id="Menu" style="margin-top: 100px; margin-bottom: 50px; ">
+    <h4 class="carousel-heading" style="text-align: center; color: goldenrod;">Tasty & Spicy Recipees</h4>
+    <h5 style="text-align: center;">Discover Our Menu</h5>
+  </div>
+  <!-- nav-tabs start-->
+  <div class="" style="width: fit-content; height: fit-content; margin: auto;">
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active color-btn" id="nav-appertizer-tab" data-bs-toggle="tab" data-bs-target="#nav-appertizer" type="button" role="tab" aria-controls="nav-appertizer" aria-selected="true">Appertizers</button>
+      <button class="nav-link color-btn" id="nav-Lunch-tab" data-bs-toggle="tab" data-bs-target="#nav-Lunch" type="button" role="tab" aria-controls="nav-Lunch" aria-selected="false">Lunch</button>
+      <button class="nav-link color-btn" id="nav-Dinner-tab" data-bs-toggle="tab" data-bs-target="#nav-Dinner" type="button" role="tab" aria-controls="nav-Dinner" aria-selected="false">Dinner</button>
+      <button class="nav-link color-btn" id="nav-Deserts-tab" data-bs-toggle="tab" data-bs-target="#nav-Deserts" type="button" role="tab" aria-controls="nav-Deserts" aria-selected="false">Deserts</button>
+      <button class="nav-link color-btn" id="nav-Drinks-tab" data-bs-toggle="tab" data-bs-target="#nav-Drinks" type="button" role="tab" aria-controls="nav-Drinks" aria-selected="false">Drinks</button>
+    </div>
+  </nav>
+  </div>
+  <div class="tab-content " style="width: 70%; height: fit-content; margin: auto !important;" id="nav-tabContent">
+    <!-- Apetizer pills start -->
+    <div class="tab-pane fade show active" id="nav-appertizer" role="tabpanel" aria-labelledby="nav-appertizer-tab" tabindex="0">
+      <div class="row mt-4 gx-2">
+        <!-- box -->
+        <div class="box col-lg-6">
+          <div class="boxed "  style="height: fit-content;">
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/barbeque.png" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Barbeque Roast Grilling <p style="color: goldenrod;">Price:$25</p></div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/spring rolls.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Spring Rolls <p style="color: goldenrod;">Price:$25</p></div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/Edamame.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Edamame <p style="color: goldenrod;">Price:$25</p></div>
+          
+        </div>
+        <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/barbeque4.png" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Dim Sum Side Dish <p style="color: goldenrod;">Price:$25</p></div>
+          
+      </div>
+          </div>
+        </div>
+        <!-- box -->
+  
+  
+        <!-- box -->
+        <div class="box col-lg-6">
+          <div class="boxed " style="height: fit-content;">
+            <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/Caprese salad.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; ">Caprese salad 
+            <p style="color: goldenrod;">Price:$25</p>
+            </div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/nachos.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Nachos <p style="color: goldenrod;">Price:$25</p></div>
+          
+        </div>
+        <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/Cheese board.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Cheese board <p style="color: goldenrod;">Price:$25</p></div>
+          
+      </div>
+      <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/Shrimp cocktail.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Barbeque Roast Grilling <p style="color: goldenrod;">Price:$25</p></div>
+          
+    </div>
+          </div>
+        </div>
+        <!-- box -->
+      </div>
+    </div>
+     <!-- Apetizer pills end -->
+  
+  
+      <!-- Lunch pills start -->
+    <div class="tab-pane fade" id="nav-Lunch" role="tabpanel" aria-labelledby="nav-Lunch-tab" tabindex="0">
+      <div class="row mt-4 gx-2">
+        <!-- box -->
+        <div class="box col-lg-6">
+          <div class="boxed " style="height: fit-content;">
+            <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/breadsandwich.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Breadsandwich <p style="color: goldenrod;">Price:$25</p></div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/greek salad.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Greek Salad <p style="color: goldenrod;">Price:$25</p></div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/chicken noodle soup.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> chicken noodle soup<p style="color: goldenrod;">Price:$25</p></div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/buffalo chicken.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> buffalo chicken <p style="color: goldenrod;">Price:$25</p></div>
+          
+          </div>
+          </div>
+        </div>
+        <!-- box -->
+  
+        <!-- box -->
+        <div class="box col-lg-6">
+          <div class="boxed " style="height: fit-content;">
+            <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/classic beef burger.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> classic beef burger <p style="color: goldenrod;">Price:$25</p></div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/barbeque3.png" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Barbeque Pincho Kehab <p style="color: goldenrod;">Price:$25</p></div>
+          
+        </div>
+        <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/barbeque13.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Spaghetti and Meet balls<p style="color: goldenrod;">Price:$25</p></div>
+          
+      </div>
+      <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/barbeque.png" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Barbeque Roast Grilling <p style="color: goldenrod;">Price:$25</p></div>
+          
+    </div>
+          </div>
+        </div>
+        <!-- box -->
+      </div>
+    </div>
+     <!-- Lunch pills end-->
+  
+  
+     <!-- Dinner pills start -->
+    <div class="tab-pane fade" id="nav-Dinner" role="tabpanel" aria-labelledby="nav-Dinner-tab" tabindex="0">
+      <div class="row mt-4 gx-2">
+        <!-- box -->
+        <div class="box col-lg-6">
+          <div class="boxed " style="height: fit-content;">
+            <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/nachos.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Nachos <p style="color: goldenrod;">Price:$25</p></div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/Cheese board.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Cheese board <p style="color: goldenrod;">Price:$25</p></div>
+            
+        </div>
+        <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/chicken noodle soup.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> chicken noodle soup<p style="color: goldenrod;">Price:$25</p></div>
+          
+      </div>
+      <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/buffalo chicken.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> buffalo chicken <p style="color: goldenrod;">Price:$25</p></div>
+      
+      </div>
+          </div>
+        </div>
+        <!-- box -->
+  
+  
+        <!-- box -->
+        <div class="box col-lg-6">
+          <div class="boxed " style="height: fit-content;">
+            <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/jollof.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Barbeque Roast Grilling<p style="color: goldenrod;">Price:$25</p></div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/barbeque10.jpeg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Fried Ricr<p style="color: goldenrod;">Price:$25</p></div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/barbeque11.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Ofada Rice<p style="color: goldenrod;">Price:$25</p></div>
+          
+        </div>
+        <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/barbeque6.png" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Barbeque Roast Grilling<p style="color: goldenrod;">Price:$25</p></div>
+          
+      </div>
+          </div>
+        </div>
+        <!-- box -->
+      </div>
+    </div>
+    <!-- Dinner pills end-->
+  
+  
+    <!-- Deserts pills start -->
+    <div class="tab-pane fade" id="nav-Deserts" role="tabpanel" aria-labelledby="nav-Deserts-tab" tabindex="0">
+      <div class="row mt-4 gx-2">
+        <!-- box -->
+        <div class="box col-lg-6">
+          <div class="boxed "  style="height: fit-content;">
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/barbeque.png" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Barbeque Roast Grilling <p style="color: goldenrod;">Price:$25</p></div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/spring rolls.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Spring Rolls <p style="color: goldenrod;">Price:$25</p></div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/Edamame.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Edamame <p style="color: goldenrod;">Price:$25</p></div>
+          
+        </div>
+        <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/barbeque4.png" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Dim Sum Side Dish <p style="color: goldenrod;">Price:$25</p></div>
+          
+      </div>
+          </div>
+        </div>
+        <!-- box -->
+  
+  
+        <!-- box -->
+        <div class="box col-lg-6">
+          <div class="boxed " style="height: fit-content;">
+            <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/Caprese salad.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; ">Caprese salad 
+            <p style="color: goldenrod;">Price:$25</p>
+            </div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/nachos.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Nachos <p style="color: goldenrod;">Price:$25</p></div>
+          
+        </div>
+        <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/Cheese board.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Cheese board <p style="color: goldenrod;">Price:$25</p></div>
+          
+      </div>
+      <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/Shrimp cocktail.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> Barbeque Roast Grilling <p style="color: goldenrod;">Price:$25</p></div>
+          
+    </div>
+          </div>
+        </div>
+        <!-- box -->
+      </div>
+    </div>
+     <!-- Deserts pills end -->
+     
+      <!-- Drinks pills start -->
+    <div class="tab-pane fade" id="nav-Drinks" role="tabpanel" aria-labelledby="nav-Drinks-tab" tabindex="0">
+      <div class="row mt-4 gx-2">
+         <!-- box -->
+         <div class="box col-lg-6">
+          <div class="boxed "  style="height: fit-content;">
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/martini.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; ">martini <p style="color: goldenrod;">Price:$25</p></div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/stouts.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> stouts <p style="color: goldenrod;">Price:$25</p></div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/lemonade.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> lemonade <p style="color: goldenrod;">Price:$25</p></div>
+          
+        </div>
+        <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/cocktail bar nightlife.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> cocktail bar nightlife <p style="color: goldenrod;">Price:$25</p></div>
+          
+      </div>
+          </div>
+        </div>
+        <!-- box -->
+  
+  
+        <!-- box -->
+        <div class="box col-lg-6">
+          <div class="boxed " style="height: fit-content;">
+            <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/margarita.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; ">margarita
+            <p style="color: goldenrod;">Price:$25</p>
+            </div>
+          
+          </div>
+          <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/grapefruit juice.png" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> grapefruit juice <p style="color: goldenrod;">Price:$25</p></div>
+          
+        </div>
+        <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/chocolate milkshake.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> chocolate milkshake <p style="color: goldenrod;">Price:$25</p></div>
+          
+      </div>
+      <div style="display: flex; justify-content: space-between; height: fit-content; align-items: center;"><div style="width: 25%;"><img src="Static/Img/black tea.jpg" width="100%" height="100px" alt=""></div><div style="width: 75%; height: 100px; margin: auto;margin-top: 20px; "> black tea <p style="color: goldenrod;">Price:$25</p></div>
+          
+    </div>
+          </div>
+        </div>
+        <!-- box -->      </div>
+    </div>
+    <!-- Drinks pills end -->
+  </div>
+  </div>
+  <!-- nav-tabs end-->
+  <!-- Menu End-->
+
+  <!-- Ingredient-container -->
+<div class="ingredient-container" id="Gallery" style="height: fit-content; width: 100%; margin-top: 50px; padding: 50px 0px;">
+    <div class="container ingredient-contained" style="width: 100%; height: 500px;">
+      <h3 style="color: goldenrod; text-align: center;">Gallery Page</h3>
+      <div class="contained">
+        
+        <div class="carousel-rotate">
+          <div class="carousel__fade"></div>
+          <div class="carousel__fade"></div>
+          <div class="carousel__fade"></div>
+          <div class="carousel__fade"></div>
+          <div class="carousel__fade"></div>
+          <div class="carousel__fade"></div>
+          <div class="carousel__fade"></div>
+          <div class="carousel__fade"></div>
+          <div class="carousel__fade"></div>
+        </div>
+    
+      
+      </div>
+      <div class="row gallery-container-sm" >
+        
+            <div class="boxed  gallery-box" style="height: 300px; width: 49%">
+            <img src="Static/Img/eating1.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            </div>
+        
+        
+            <div class="boxed  gallery-box mt-1" style="height: 300px; width:49%;">
+            <img src="Static/Img/eating2.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            </div>
+            <div class="boxed  gallery-box mt-2" style="height: 300px; width: 49%">
+            <img src="Static/Img/eating3.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            </div>
+        
+        
+            <div class="boxed  gallery-box mt-2" style="height: 300px; width:49%;">
+            <img src="Static/Img/eating4.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            </div>
+            <div class="boxed  gallery-box mt-2" style="height: 300px; width: 49%">
+            <img src="Static/Img/eating5.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            </div>
+        
+        
+            <div class="boxed  gallery-box mt-2" style="height: 300px; width:49%;">
+            <img src="Static/Img/eating6.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+            </div>
+        
+       
+      </div>
+    </div>
+    <div class="book-btn counter-btn" style="margin: 50px auto; width: fit-content; height: fit-content; padding: 10px; border-radius: 15px; border: 2px solid goldenrod; color: goldenrod;"data-bs-toggle="modal" data-bs-target="#exampleModal3"><b> View More....</b>
+    
+    </div>
+
+
+    
+    </div>
+    
+
+
+<!-- Container -->
+<div class="container" id="chef" style="height: fit-content; margin-top: 70px;">
+  <p class="introduction-heading fs-3" style="text-align: center; color: goldenrod;">Expert Chefs</p>
+  <h3 style="text-align: center;">Our Team Members</h3>
+  <div class="row mt-4">
+    <div class="box col-lg-3">
+      <div class="boxed" style="height: fit-content;">
+      <img src="Static/Img/shalom.jpg" class="chef-images" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+      <h5 style="text-align: center;">Oluwafemi Shalom</h5>
+      <p style="text-align: center; color: goldenrod;">Founder, Ceo</p>
+      </div>
+    </div>
+    <div class="box col-lg-3">
+      <div class="boxed" style="height: fit-content;">
+      <img src="Static/Img/chef2.jpg"  class="chef-images" style="width: 100%; height: 300px; " alt="">
+      <h5 style="text-align: center;">Kevin Haley</h5>
+      <p style="text-align: center; color: goldenrod;">CO-FOUNDER, CTO</p>
+      </div>
+    </div>
+    <div class="box col-lg-3">
+      <div class="boxed" style="height: fit-content;">
+      <img src="Static/Img/chef3.jpg"  class="chef-images" style="width: 100%; height: 300px; " alt="">
+      <h5 style="text-align: center;">Alishia Fulton</h5>
+      <p style="text-align: center; color: goldenrod;">CHIEF CREATIVE OFFICER</p>
+      </div>
+    </div>
+    <div class="box col-lg-3">
+      <div class="boxed" style="height: fit-content;">
+      <img src="Static/Img/chef4.jpg"  class="chef-images" style="width: 100%; height: 300px; " alt="">
+      <h5 style="text-align: center;">Ella Wills</h5>
+      <p style="text-align: center; color: goldenrod;">CHIEF CREATIVE OFFICER</p>
+      </div>
+    </div>
+ 
+  </div>
+  
+  
+  </div>
+  </div>
+  
+  
+  <!-- Container -->
+  
+
+
+  <div class="bigResturant " id="bookTable" style="height: fit-content;  width: 100%; margin-top: 120px; padding: 200px 0px;">
+<h3 style="color: white; text-align: center;">Book A Table Now</h3>
+<div class="form-img" style="display: flex; justify-content: space-between; height: fit-content; width: 60%; margin: auto; margin-top: 50px;">
+<div class="box form-box" style="width: 50%; height: 400px;"><img src="Static/Img/resturant.jpg" style="width: 100%; height: 400px;" alt=""></div>
+<div class="box form-box" style="width: 50%; height: 400px; background-color: white;">
+<h4 style="text-align: center;">Reservation</h4>
+<form action="https://formspree.io/f/xbjeapdk" method="post">
+  <div class="form-row">
+    <select name="days" id="">
+      <option value="day-select">
+        Select Day
+      </option>
+      <option value="">Sunday</option>
+      <option value="">Monday</option>
+      <option value="">Tuesday</option>
+      <option value="">Wenesday</option>
+      <option value="">Thursday</option>
+      <option value="">Friday</option>
+      <option value="">Saturday</option>
+    </select>
+    <select name="hours" id="">
+      <option value="hours-select">Select Hours</option>
+      <option value="hours-select">8:00am</option>
+      <option value="hours-select">10:00am</option>
+      <option value="hours-select">12:00pm</option>
+      <option value="hours-select">2:00pm</option>
+      <option value="hours-select">4:00pm</option>
+      <option value="hours-select">6:00pm</option>
+      <option value="hours-select">8:00pm</option>
+      <option value="hours-select">10:00pm</option>
+    </select>
+  </div>
+  
+  <div class="form-row" >
+    <input type="text" name="Fullname" placeholder="Full Name">
+   
+  <input type="text" name="phone" placeholder="Phone Number">
+      
+    
+  </div>
+  <div class="form-row" >
+    <input type="text" placeholder="What food do you want">
+   
+  <input type="text" name="location" placeholder="Location">
+      
+    
+  </div>
+  <div class="form-row">
+    <input type="number" name="Persons" placeholder="How Many Persons">
+    <input type="submit" role="submit" value="Book Now">
+  </div>
+</form>
+</div>
+</div>
+
+  </div>
+
+    <!-- container start -->
+<!-- Map start -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.498186902562!2d3.235715614317399!3d6.708889022842769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b995b41b7dd6d%3A0xb6c08985374e0e09!2sAptech%20Computer%20Education%20-Sango%20Ota!5e0!3m2!1sen!2sng!4v1679616572167!5m2!1sen!2sng" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- Map end -->
+
+<div class="Testimonials-bg" style="height: fit-content; margin-top: 70px;">
+<p class="introduction-heading fs-2" style="text-align: center; color: goldenrod; padding: 30px 0px;">Testimonials</p>
+<h2 style="text-align: center; color: white;">Client Feedback</h2>
+
+<!-- Carousel start -->
+<div id="carouselExampleInterval" style="margin-top: 50px;" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="text-align: center;" data-bs-interval="10000">
+      <p><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i></p>
+      <div style=" border-radius: 50%; width: 50px; height: 50px; margin: auto;">
+      <img src="Static/Img/person1.jpg" style="border-radius: 50%; width: 50px; height: 50px; object-fit: cover; object-position: center;" alt="">
+     
+      </div>
+      <div style="width: 60%; margin: auto;">
+      <p class="fs-5" style="color: white; text-align: center;">"I was blown away by the quality of the food at this restaurant. The ingredients were fresh, the flavors were bold, and the presentation was beautiful. The chef clearly knows what they are doing, and the staff was incredibly friendly and attentive. I would highly recommend this restaurant to anyone looking for a great dining experience."</p>
+
+      <h5 style="text-align: center; color: white;">---Budy Taylor</h5>
+    </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <p style="text-align: center;"><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i></p>
+      <div style=" border-radius: 50%; width: 50px; height: 50px; margin: auto;">
+      <img src="Static/Img/person2.jpg" style="border-radius: 50%; width: 50px; height: 50px; object-fit: cover; object-position: center;" alt="">
+     
+      </div>
+      <div style="width: 60%; margin: auto;">
+      <p class="fs-5" style="color: white; text-align: center;">"I was blown away by the quality of the food at this restaurant. The ingredients were fresh, the flavors were bold, and the presentation was beautiful. The chef clearly knows what they are doing, and the staff was incredibly friendly and attentive. I would highly recommend this restaurant to anyone looking for a great dining experience."</p>
+      <h5 style="text-align: center; color: white;">---Nami Bunde</h5>
+    </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <p style="text-align: center;"><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i><i class="fa fa-star" style="color: gold;" aria-hidden="true"></i></p>
+      <div style=" border-radius: 50%; width: 50px; height: 50px; margin: auto;">
+      <img src="Static/Img/person3.jpg" style="border-radius: 50%; width: 50px; height: 50px; object-fit: cover; object-position: center;" alt="">
+     
+      </div>
+      <div style="width: 60%; margin: auto;">
+      <p class="fs-5" style="color: white; text-align: center;">"I was blown away by the quality of the food at this restaurant. The ingredients were fresh, the flavors were bold, and the presentation was beautiful. The chef clearly knows what they are doing, and the staff was incredibly friendly and attentive. I would highly recommend this restaurant to anyone looking for a great dining experience."</p>
+      <h5 style="text-align: center; color: white;">---Sevena Williams</h5>
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- carousel end -->
+
+</div>
+
+
+
+<!-- Container -->
+
+
+<!-- Footer -->
+<footer class="text-center container-fluid text-lg-start bg-dark text-muted" style="border-top: 2px solid  white;">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+   
+    <!-- Left -->
+
+    <!-- Right -->
+   
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4 text-light">
+            <i class="fas fa-gem me-3 text-secondary"></i><img src="Static/Img/chef-hat-1-1.png" width="25" height="25" alt=""> Bag Bag
+          </h6>
+          <p class="text-light">
+            Thank you for visiting our bag website! We hope you found the perfect food to meet your needs. At Sloppy, we are committed to providing our customers with high-quality products and exceptional customer service.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-light">
+            Links
+          </h6>
+            <p><a data-i18n class="nav-link text-light" aria-current="page" href="index.html">Home</a>
+ 
+           </p>
+           <p  class="nav-item">
+             <a data-i18n class="nav-link text-light" href="#About-Us">About Us</a>
+           </p>
+           <p  class="nav-item">
+             <a data-i18n class="nav-link text-light" href="#Gallery">Gallery</a>
+           </p>
+           
+           <p  class="nav-item">
+             <a data-i18n class="nav-link text-light" href="#bookTable">Reservation</a>
+           </p>
+         
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" >
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-light">
+            Follow us on
+          </h6>
+          <p style="text-align: center;">
+            <a href="https://web.facebook.com/shalom.oluwafemi.92" > <span class="fa-stack fa-lg">
+              <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+              <i class="fa fa-facebook fa-stack-1x " style="color: white; "></i>
+          </a>
+          </p>
+          <p style="text-align: center;">
+            <a href="https://www.instagram.com/shalomoluwafemi/">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+                <i class="fa fa-instagram fa-stack-1x" style="color: white;"></i>
+            </a>
+          </p>
+          <p style="text-align: center;">
+            <a href="https://twitter.com/OluwafemiShalo1"> <span class="fa-stack fa-lg">
+              <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+              <i class="fa fa-twitter fa-stack-1x" style="color: white;"></i>
+          </a>
+          </p>
+          <p style="text-align: center;">
+            <a href="https://github.com/shalom-geek-ng">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle-thin fa-stack-2x" style="color: white;"></i>
+                <i class="fa fa-github fa-stack-1x" style="color: white;"></i>
+              </a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-light">Contact</h6>
+          <p class="text-light"> 16,Express Road, Aptech, Ogun State.</p>
+          <p class="text-light">
+           
+           oluwafemishalom3@gmail.com
+          </p>
+          <p class="text-light"> +234 816 664 98 97</p>
+          
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025); color: white;">
+   Bag Bag 2023 Presented by <span style="color: goldenrod;">Oluwafemi Shalom</span>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+
+<!--Gallery-Modal -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+  <div class="modal-content">
+  <div class="modal-header">
+    <h1 class="modal-title fs-5" id="exampleModalLabel2" style="color: goldenrod; width: fit-content; margin: auto; height: fit-content; text-align: center;">People Eating In Our Resturant</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    
+    <p style="text-align: center;">Our Lovely Customers🤗</p>
+  
+  
+  
+    <div class="container">
+      <div class="row gx-1">
+        <!--  -->
+        <div class="box col-12 ">
+          <div class="boxed " data-aos="fade-up"  data-aos-delay="300" data-aos-duration="500" style="background-color: white; height: fit-content; padding: 10px;">
+          <img src="Static/Img/eating1.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+        
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="box col-12">
+          <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+          <img src="Static/Img/eating2.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+         
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="box col-12">
+          <div class="boxed " data-aos="fade-right"  data-aos-delay="300" data-aos-duration="800" style="background-color: white; height: fit-content; padding: 10px;">
+          <img src="Static/Img/eating3.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+         
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="box col-12">
+          <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+          <img src="Static/Img/eating4.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+         
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="box col-12">
+          <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+          <img src="Static/Img/eating5.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+         
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="box col-12">
+          <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+          <img src="Static/Img/eating6.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+          
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="box col-12">
+          <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+          <img src="Static/Img/eating7.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+         
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="box col-12">
+          <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+          <img src="Static/Img/eating8.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+          
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="box col-12">
+          <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+          <img src="Static/Img/eating9.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+       
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="box col-12">
+          <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+          <img src="Static/Img/eating10.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+       
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="box col-12">
+          <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+          <img src="Static/Img/eating11.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+       
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="box col-12">
+          <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+          <img src="Static/Img/eating12.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+       
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="box col-12">
+          <div class="boxed " data-aos="fade-left"  data-aos-delay="300" data-aos-duration="1000" style="background-color: white; height: fit-content; padding: 10px;">
+          <img src="Static/Img/eating13.jpg" style="width: 100%; height: 300px; object-fit: cover; object-position: center;" alt="">
+       
+        </div>
+        <!--  -->
+    
+      </div>
+      
+  
+  
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!--Gallery-modal end -->
+
+
+
+
+
+
+ 
+
+   <script src="Static/Js/bootstrap.bundle.min.js"></script>
+   <script src="Static/Js/script.js"></script>
+  
+   
+   <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+   <script>
+       var typed = new Typed('.auto-type1',{
+           strings: ['WELCOME TO Sloppy RESTURANT', 'We Give Our New Customers bonuses','Welcome Once Again'],
+           typeSpeed: 150,
+           backSpeed: 150,
+           loop: true
+       })
+   </script>
+   <script>
+       var typed = new Typed('.auto-type2',{
+           strings: ['Baba'],
+           typeSpeed: 150,
+           backSpeed: 150,
+           loop: true
+       })
+   </script>
+   
+   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
+</body>
+</html>
